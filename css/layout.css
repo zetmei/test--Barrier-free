@@ -255,9 +255,6 @@ IMG FLOAT GRID SYSTEM
     margin-bottom: 0; 
   }
 }
-/*   .column-block img{
-    width: 100%;
-  } */
 /* ////////////////////////////
 GRID SYSTEM END
 /////////////////////////////*/
@@ -266,15 +263,114 @@ GRID SYSTEM END
 /* ////////////////////////////
 layout style
 /////////////////////////////*/
+/* set */
 html,
 body {
-  /* overflow-x: hidden; */ /* Prevent scroll on narrow devices */
   font-family: 微軟正黑體, "Microsoft JhengHei";
 }
 .container {
     width: 100%;
     max-width: 1366px;
 }
+.container-small{
+  width: 100%;
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.content .container-small{
+    padding: 40px 0 60px 0;
+}
+p{
+  font-size: 16px;
+  color: #000;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+i{
+    color: #5C9AB1;
+    padding: 0 10px 0 0;
+    font-size: 22px;
+}
+.img-rwd img,img.img-rwd{
+  width: 100%;
+}
+button, .button {
+    cursor: pointer;
+    font-family: 微軟正黑體, "Microsoft JhengHei", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    -webkit-appearance: none;
+    display: inline-block;
+    background-color: rgb(29, 164, 228);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    box-shadow: rgb(69, 161, 189) 0px 2px;
+    border-style: solid;
+    border-width: 0px;
+    margin: 0px 0px 0rem;
+    text-decoration: none;
+    border-color: rgb(0, 112, 149);
+    border-radius: 2px;
+    padding: 10px 47px;
+    transition: background-color 300ms ease-out;
+    margin-top: 20px;
+}
+button:hover, .button:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.btn-G {
+    background-color: #afafaf;
+    box-shadow: rgb(171, 171, 171) 0px 2px;
+}
+
+
+table{
+  font-size: 16px;
+  border: 1px solid #f3f3f3;
+}
+table tr:nth-of-type(odd) {
+    background: #F9F9F9;
+}
+table td{
+    padding: 10px;
+}
+table select,input[type="text"]{
+  max-width: 200px;
+  width: 100%;
+}
+span.notice{
+    font-size: 14px;
+    display: block;
+    color: #ff7600;
+}
+span.remarks{
+    font-size: 14px;
+    display: block;
+    color: #5C9AB1;
+    
+}
+/* common */
+.float-center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.float-left {
+    float: left !important;
+}
+.float-right {
+    float: right !important;
+}
+.text-center{
+  text-align: center;
+}
+
+
+/* header */
 header{
     position: relative;
     top: 0;
@@ -283,7 +379,6 @@ header{
     z-index: 10;
     border-bottom: 1px solid #eaeaea;
     background-color: #fff;
-    overflow: hidden;
 }
 header:after{
     content: '';
@@ -312,7 +407,6 @@ header:after{
     width: 100%;
     height: 100%;
     color: transparent;
-    /* text-indent: -9999px; */
 }
 .navM {
     position: absolute;
@@ -343,7 +437,7 @@ header:after{
     text-align: center;
     margin-left: 0px;
     line-height: 24px;
-    font-weight: fnormal;
+    font-weight: normal;
     text-decoration: none;
     padding: 0px 18px;
 }
@@ -385,91 +479,8 @@ header:after{
   .mobile_navM li a {
       display: block;
   }
-/* 內容 */
-.content{
-  position: relative;
-}
-.page_index{
-    position: relative;
-    width: 100%;
-    background: url(../images/layout/bg.png) 0 0 no-repeat;
-    background-size: 100% 100%;
-}
-.opinioncardwrap{    
-    margin-top: 70px;
-    margin-bottom: 30px;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.opinioncard{
-    display: block;
-    position: relative;
-    background-color: #fff;
-    border-radius: 0 0 10px 10px;
-    -moz-box-shadow: 0px 1px 1px #a0a0a0;
-    -webkit-box-shadow: 0px 1px 1px #a0a0a0;
-    box-shadow: 0px 1px 1px #a0a0a0;
-    text-align: center;
-   color: #000;
-  transition: .2s;
-}
-.opinioncard span.stripe{
-  position: absolute;
-  width: 100%;
-  height: 8px;
-  top: 0;
-  left: 0;
-}
-.opinioncard.a span.stripe{  background-color: #81e496;}
-.opinioncard.b span.stripe{  background-color: #01bfee;}
-.opinioncard.c span.stripe{  background-color: #3270b0;}
-.opinioncard.d span.stripe{  background-color: #6232b0;}
-.opinioncard.e span.stripe{  background-color: #b03297;}
-.opinioncard img{
-  width: 80%;
-}
-.opinioncard img.letter{
-    margin-top: 40px;
-    margin-bottom: 20px;
-  transition: .2s;
-}
-.opinioncard p{  
-    font-size: 22px;
-    border-top: 1px solid #d2d2d2;
-    padding-top: 20px;
-}
-.opinioncard img.arrow{
-    padding-bottom: 20px;
-    width: 56%;
-}
-.opinioncard:hover{
-  text-decoration: none;
-}
-.opinioncard:hover img.letter{
-  width: 90%;
-  transition: .2s;
-}
-.opinioncard:hover .go{
-  border-radius: 0px 0px 10px 10px;
-  transition: .2s;
-}
-.opinioncard.a:hover div.go{  background-color: #81e496;}
-.opinioncard.b:hover div.go{  background-color: #01bfee;}
-.opinioncard.c:hover div.go{  background-color: #3270b0;}
-.opinioncard.d:hover div.go{  background-color: #6232b0;}
-.opinioncard.e:hover div.go{  background-color: #b03297;}
-.opinioncard:hover p{
-  color: #fff;
-    transition: .2s;
-}
-.opinioncard:hover img.arrow{
-  -webkit-filter:invert(1);
-    transition: .2s;
-}
 
-
-/* 頁尾 */
+/* footer */
 footer {
   padding: 50px 0;
   background-color: #434343;
@@ -491,6 +502,7 @@ footer p{
    margin-left: 20px;
   margin-right: 20px;
   line-height: 25px;
+    margin-bottom: 0px;
 }
 .navF{
     display: inline-block;
@@ -552,6 +564,14 @@ footer .footericon .footicon03 {
 }
 
 
+
+
+
+@media screen and (max-width: 1200px) {
+  .content .container-small{
+    padding: 40px 20px 60px 20px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .opinioncard{
      margin-bottom: 20px;
@@ -564,8 +584,14 @@ footer .footericon .footicon03 {
 
 }
 @media screen and (max-width: 400px) {
-  .logo {
-      background-position: -92px 0px;
+  .logo {    
+    left: -10px;
+    top: -3px;
+    width: 230px;
+    height: 80px;
+    background: url(../images/layout/logo-short.png) 0 0 no-repeat;
+    background-size: 100% auto;
+         /*  background-position: -92px 0px; */
   }
   .small-up-2 .column{
     width: 100%;
@@ -575,6 +601,8 @@ footer .footericon .footicon03 {
     float: none;
     margin: 0 auto;
   }
+ 
+
 }
 
 

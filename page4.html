@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="zh-tw">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,6 +24,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script></html>
     <script src="js/layout.js"></script>
+
     <style>
     </style>
   </head>
@@ -50,11 +51,12 @@
 
 
 
+
     </div>
   </div>
 
 </header>
-<section  class="content page_index">
+<section  class="content page_page2">
     <!-- mobile menu -->
     <nav class="mobile_navM">
                 <li><a href="index.html"><span>回首頁</span></a></li>
@@ -66,60 +68,54 @@
                 <li><a href="page4.html"><span>填寫滿意度</span></a></li>
                 <li><a href="page5.html"><span>民意信箱使用說明</span></a></li>
     </nav>
+    <!-- page nav -->
+    <div class="banner">
+      <h1 class="bannerText"><img src="images/layout/bannertext04.png" alt="填寫滿意度"/></h1>
+      <nav class="navP visible-lg-block">
+            <li><a href="page1.html">使用說明</a></li>
+            <li><a href="page2.html">填寫意見信箱</a></li>
+            <li><a href="page3.html">處理進度查詢</a></li>
+            <li><a href="page4.html">填寫滿意度</a></li>
+            <li><a href="page5.html">民意信箱使用說明</a></li>
+      </nav>
+
+    </div>
+
     <!-- page content -->
-    <div class="container">
-        <div class="opinioncardwrap row small-up-2 medium-up-3 large-up-5">
-                      <div class="column column-block">
-                          <a class="opinioncard a" href="page1.html">
-                            <span class="stripe"></span>
-                            <img class="letter" src="images/layout/icon01.png" alt="使用說明">
-                            <div class="go">
-                              <h3>使用說明</h3>
-                              <img class="arrow" src="images/layout/icon06.png" alt="">
-                            </div>
-                          </a>
-                      </div>
-                      <div class="column column-block">
-                          <a class="opinioncard b" href="page2.html">
-                            <span class="stripe"></span>
-                            <img class="letter" src="images/layout/icon02.png" alt="填寫意見信箱">
-                            <div class="go">
-                              <h3>填寫意見信箱</h3>
-                              <img class="arrow" src="images/layout/icon06.png" alt="">
-                            </div>
-                          </a>
-                      </div>
-                      <div class="column column-block">
-                          <a class="opinioncard c" href="page3.html">
-                            <span class="stripe"></span>
-                            <img class="letter" src="images/layout/icon03.png" alt="處理進度查詢">
-                            <div class="go">
-                              <h3>處理進度查詢</h3>
-                              <img class="arrow" src="images/layout/icon06.png" alt="">
-                            </div>
-                          </a>
-                      </div>
-                      <div class="column column-block">
-                          <a class="opinioncard d" href="page4.html">
-                            <span class="stripe"></span>
-                            <img class="letter" src="images/layout/icon04.png" alt="填寫滿意度">
-                            <div class="go">
-                              <h3>填寫滿意度</h3>
-                              <img class="arrow" src="images/layout/icon06.png" alt="">
-                            </div>
-                          </a>
-                      </div>
-                      <div class="column column-block">
-                          <a class="opinioncard e" href="page5.html">
-                            <span class="stripe"></span>
-                            <img class="letter" src="images/layout/icon05.png" alt="民意信箱使用說明">
-                            <div class="go">
-                              <h3>民意信箱使用說明<h3p>
-                              <img class="arrow" src="images/layout/icon06.png" alt="">
-                            </div>
-                          </a>
-                      </div>
-        </div>
+    <div class="container-small">
+            <p><i class="fa fa-smile-o" aria-hidden="true"></i>您於收到本部的正式回復且已結案之信件，會隨著回復函附上 滿意度調查問卷之網頁連結，您可以點選該網頁連結直接填寫滿意度問卷。您也可以在網<br>
+            <i class="fa fa-smile-o" aria-hidden="true"></i>
+            滿意度調查問卷連結之回復函，為便於後續統計及處理，請務必在收到回復函後5~7日內填寫滿意度調查問卷，逾期該問卷即自動失效，謝謝您的配合。</p>
+
+            <table width="100%" border="0" cellpadding="5" cellspacing="0"  summary="填寫意見信箱">
+                    <tbody>
+                    <tr>
+                        <td width="20%">
+                            信件編號<font color="Red">*</font>
+                        </td>
+                        <td width="80%">
+                            <input type="text" title="輸入信件編號">
+                            <span class="notice">*請輸入信件編號</span>
+                         </td>
+                    </tr>
+                 <tr>
+                        <td>
+                            電子信箱<font color="Red">*</font>
+                        </td>
+                        <td>
+                            <input type="text" title="輸入電子信箱">
+                            <span class="notice">*請輸入電子信箱</span>
+                            <span class="notice">*請輸入正確的電子信箱格式</span>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+            <div class="text-center">
+                            <a class="button btn-G " href="javascript:;" title="清除重填"t>清除重填</a>
+                            <a class="button" href="javascript:;" title="送出">送出</a>
+            </div>
+                
+        
     </div>
 </section>
     <!-- footer -->

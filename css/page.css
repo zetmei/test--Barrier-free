@@ -1,0 +1,169 @@
+
+/* 內容 */
+.content{
+  position: relative;
+}
+.page_index{
+    position: relative;
+    width: 100%;
+    background: url(../images/layout/bg.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.opinioncardwrap{    
+    margin-top: 70px;
+    margin-bottom: 30px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.opinioncardwrap .column-block{
+    margin-bottom: 20px;
+}
+.opinioncard{
+    display: block;
+    position: relative;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    -moz-box-shadow: 0px 1px 1px #a0a0a0;
+    -webkit-box-shadow: 0px 1px 1px #a0a0a0;
+    box-shadow: 0px 1px 1px #a0a0a0;
+    text-align: center;
+   color: #000;
+  transition: .2s;
+}
+.opinioncard span.stripe{
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  top: 0;
+  left: 0;
+}
+.opinioncard.a span.stripe{  background-color: #81e496;}
+.opinioncard.b span.stripe{  background-color: #01bfee;}
+.opinioncard.c span.stripe{  background-color: #3270b0;}
+.opinioncard.d span.stripe{  background-color: #6232b0;}
+.opinioncard.e span.stripe{  background-color: #b03297;}
+.opinioncard img{
+  width: 80%;
+}
+.opinioncard img.letter{
+    margin-top: 40px;
+    margin-bottom: 20px;
+  transition: .2s;
+}
+.opinioncard h3{  
+    font-size: 22px;
+    border-top: 1px solid #d2d2d2;
+    padding-top: 20px;
+}
+.opinioncard img.arrow{
+    padding-bottom: 20px;
+    width: 56%;
+}
+.opinioncard:hover{
+  text-decoration: none;
+}
+.opinioncard:hover img.letter{
+  width: 90%;
+  transition: .2s;
+}
+.opinioncard:hover .go{
+  border-radius: 0px 0px 10px 10px;
+  transition: .2s;
+}
+.opinioncard.a:hover div.go{  background-color: #81e496;}
+.opinioncard.b:hover div.go{  background-color: #01bfee;}
+.opinioncard.c:hover div.go{  background-color: #3270b0;}
+.opinioncard.d:hover div.go{  background-color: #6232b0;}
+.opinioncard.e:hover div.go{  background-color: #b03297;}
+.opinioncard:hover h3{
+  color: #fff;
+    transition: .2s;
+}
+.opinioncard:hover img.arrow{
+  -webkit-filter:invert(1);
+    transition: .2s;
+}
+/* //////////////
+pages 
+/////////////////*/
+
+.banner{
+  height: 210px;
+  position: relative;
+  width: 100%;
+  background: url(../images/layout/banner02.png) 0 0 no-repeat;
+  background-size: 100% auto;
+}
+
+.bannerText{
+    text-align: center;
+    padding-top: 75px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.bannerText img{
+    width: 400px;
+}
+.navP {
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    letter-spacing: 0px;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    line-height: 50px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+.navP>li {
+    position: relative;
+    display: inline-block;
+}
+.navP>li:hover a{
+    color: #22a9e6;
+    transition: .1s;
+}
+.navP > li > a {
+    display: block;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    height: auto;
+    text-align: center;
+    margin-left: 0px;
+    line-height: 50px;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 0px 18px;
+}
+/* pages content */
+.page_page1,.page_page2,.page_page3,.page_page4,.page_page5{
+
+}
+
+
+
+@media screen and (max-width: 700px) { 
+  .banner{
+    height: 160px;
+    position: relative;
+    width: 100%;
+    background: url(../images/layout/bg-mobile.png) 0 0 no-repeat;
+    background-size: 100% auto;
+  }
+  .bannerText {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .bannerText img {
+    width: 100%;
+  }
+
+}
+
+
+
+
